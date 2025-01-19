@@ -2,6 +2,8 @@ This project is a sample implementation of a Node.js native addon (n-api) using 
 
 Currently, the project only supports compilation on Windows systems.
 
+📖 [切换至中文文档](./Readme_zh.md)
+
 ## Build Instructions
 
 ### Prerequisites
