@@ -1,10 +1,12 @@
 const std = @import("std");
-const allocator = std.heap.page_allocator;
+var allocator = std.heap.page_allocator;
 
 /// Build script for Node.js native addon
 /// This script configures the build process for a Node.js native addon,
 /// including setting up includes, libraries, and compilation flags
 pub fn build(b: *std.Build) void {
+    allocator = b.allocator;
+
     // Set console output to UTF-8 for proper character display
     _ = std.os.windows.kernel32.SetConsoleOutputCP(65001);
 
